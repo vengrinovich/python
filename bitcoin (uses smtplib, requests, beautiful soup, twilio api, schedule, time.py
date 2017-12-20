@@ -104,10 +104,10 @@ def email_notification (value, btc_price):
 def sms_notification (value, btc_price):
 
 	# these are taken directly from twilio account
-	accountSID = 'AC9818e51806fa5548c74104a1c86b9313'
-	authToken = '25bae8eae5700a7f2f419e2f3e87f497'
-	myTwilioNumber = '+14252245945'
-	myCellPhone = '+14156109726'
+	accountSID = 'take this from twilio, cant disclose here - sensitive information'
+	authToken = 'take this from twilio, cant disclose here - sensitive information'
+	myTwilioNumber = 'dont disclose number on the web'
+	myCellPhone = 'dont disclose number on the web'
 
 	# the call to the Client returns a Twilio Client object 
 	twilio_client_object = Client(accountSID, authToken)
