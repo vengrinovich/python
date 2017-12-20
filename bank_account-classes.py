@@ -1,3 +1,6 @@
+# creates class for the bank account function that shows the user their balance,
+# and has availibility to deposit/withdraw/show balance
+
 class BankAccount(object):
 	balance = 0
 
