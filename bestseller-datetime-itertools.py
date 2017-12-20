@@ -1,3 +1,14 @@
+"""
+You will design, implement and test a program which allows the user to search a subset of the books
+which have appeared in the New York Times best seller lists. For simplicity, the data set will only
+contain those books which have reached #1 on either of two lists (fiction and nonfiction) since 1942.
+
+The file named bestsellers.txt contains the data set. Each line of the file contains the
+information for a separate book, which includes: title, author, publisher, date it first reached #1 on one
+of the best seller lists, and category (fiction or nonfiction). There is a tab character between fields.
+source - http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/05_ListsTuples/BestSellers/project06.pdf
+"""	
+
 	
 import datetime
 import itertools
@@ -34,6 +45,10 @@ Q: Quit:
 		menu()
 
 
+"""Search for an author: Prompt the user for a string, then display all books whose author’s name
+contains that string (regardless of case). For example, if the user enters “ST”, display all books
+whose author’s name contains (or matches) the string “ST”, “St”, “sT” or “st”."""		
+
 def search_by_author():
 
 	author = str(raw_input("Enter a title or a keyword from the author: "))
@@ -58,6 +73,10 @@ def search_by_author():
 			if name in item[1]:
 				print item
 
+"""Search for a title: Prompt the user for a string, then display all books whose title contains that
+string (regardless of case). For example, if the user enters “secret”, three books are found: “The
+Secret of Santa Vittoria” by Robert Crichton, “The Secret Pilgrim” by John le Carré, and “Harry
+Potter and the Chamber of Secrets”."""
 
 def search_by_title():
 
@@ -79,6 +98,9 @@ def search_by_title():
 		if title in item[0] or title.capitalize() in item[0]:
 			print item
 
+"""Display all books in a specific month and year: Prompt the user to enter a month and year,
+then display all books which reached #1 during that month. For example, if the user entered “7”
+and “1985”, display all books which reached #1 during the month of July in 1985"""
 
 def month_year():
 
@@ -111,6 +133,11 @@ def month_year():
 			print item
 
 
+"""Prompt the user for two years (a starting year and an ending
+year), then display all books which reached the #1 spot between those two years (inclusive). For
+example, if the user entered “1970” and “1973”, display all books which reached #1 in 1970,
+1971, 1972 or 1973."""
+			
 def year_range():
 
 	year1 = str(raw_input("Which start year do you want to pick?: "))
