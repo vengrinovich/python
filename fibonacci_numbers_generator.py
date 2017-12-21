@@ -1,8 +1,8 @@
 """Write a program that asks the user how many Fibonnaci numbers to generate 
 and then generates them. Take this opportunity to think about how you can use functions. 
-ke sure to ask the user to enter the number of numbers in the sequence to generate."""
+ke sure to ask the user to enter the number of numbers in the sequence to generate. """
 
-def fibonacci(num):
+def fibonacci(num): 
 	num1 = int(num)
 	x = 1
     	if num1 == 0:
