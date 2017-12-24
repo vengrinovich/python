@@ -3,9 +3,11 @@
 # This is known as providing an application programming interface (API).
 # Here is an example of data formatted as JSON:
 
-"""{"name": "Zophie", "isCat": true,
+"""
+{"name": "Zophie", "isCat": true,
  "miceCaught": 0, "napsTaken": 37.5,
- "felineIQ": null}"""
+ "felineIQ": null}
+ """
 
 # json module handles all the details of translating between a string with JSON data and 
 # Python values for the json.loads() and json.dumps() functions. 
